@@ -36,3 +36,6 @@ class GameMenu:
                 return "No high score yet."                            
         else:
             return "No high score yet."
+    
+    def start_game(self, difficulty):                                  
+        name = self.name_entry.get().strip() 
