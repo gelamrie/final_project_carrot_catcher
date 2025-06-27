@@ -27,4 +27,6 @@ class FallingObject:
         player_coords = self.canvas.bbox(player.id) 
         if not obj_coords or not player_coords: 
             return False
-        return not ()
+        return not (
+            obj_coords[2] < player_coords[0] or
+        )
