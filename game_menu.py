@@ -20,4 +20,8 @@ class GameMenu:
         self.name_entry = tk.Entry(self.frame, font = ("Arial", 12))                      
         self.name_entry.pack(pady = 5)     
 
-        tk.Label(self.frame, text = "Choose Difficulty", font = ("Arial", 14, "bold")).pack(pady = 10)       
+        tk.Label(self.frame, text = "Choose Difficulty", font = ("Arial", 14, "bold")).pack(pady = 10)  
+
+        for difficulty in difficulty_settings:                                         
+            btn = tk.Button(self.frame, text = difficulty, font = ("Arial", 14), width = 15, command = lambda d = difficulty: self.start_game(d))
+            btn.pack(pady=5)     
