@@ -45,3 +45,6 @@ class Game:
     def spawn_carrot(self):  
         if not self.running: 
             return   
+        x = random.randint(0, window_width - 40)                     
+        carrot = Carrot(self.canvas, x, self.drop_speed)
+        
