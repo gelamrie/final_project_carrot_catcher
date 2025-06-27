@@ -9,4 +9,6 @@ class GameMenu:
         self.root.title("Carrot Catcher")            
         self.root.geometry(f"{window_width}x{window_height}")
         self.frame = tk.Frame(root, width = window_width, height = window_height) 
-        self.frame.pack()                                  
+        self.frame.pack()    
+
+        tk.Label(self.frame, text = "Rabbit Catching Carrots", font = ("Arial", 20, "bold")).pack(pady = 20)                              
