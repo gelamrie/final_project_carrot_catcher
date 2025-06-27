@@ -6,3 +6,4 @@ class FallingObject:
     def __init__(self, canvas, x, image_path, speed):
         self.canvas = canvas 
         self.x = x 
+        self.y = 0 
