@@ -25,3 +25,8 @@ class GameMenu:
         for difficulty in difficulty_settings:                                         
             btn = tk.Button(self.frame, text = difficulty, font = ("Arial", 14), width = 15, command = lambda d = difficulty: self.start_game(d))
             btn.pack(pady=5)     
+
+    def get_high_score_text(self):                                    
+        if os.path.exists(score_file):
+            try:
+                with open(score_file, "r") as f:
