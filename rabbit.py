@@ -11,3 +11,4 @@ class Rabbit:
         self.id = self.canvas.create_image(self.x, self.y, image=self.image, anchor='nw')  
     
     def move(self, dx): 
+        self.x += dx 
