@@ -101,6 +101,6 @@ class Game:
             saved_name, saved_score = "None", 0
 
         if self.score > saved_score:                                 
-            with open(SCORE_FILE, "w") as f:                        
+            with open(score_file, "w") as f:                        
                 f.write(f"{self.player_name}:{self.score}")
             self.canvas.create_text(window_width // 2, window_height // 2 + 70, text = f"New High Score by {self.player_name}!", font = ("Arial", 12), fill = "green")  
