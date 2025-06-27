@@ -66,5 +66,8 @@ class Game:
                 self.carrots.remove(carrot)      
                 self.end_game("Game Over")
         self.root.after(50, self.update)
+
+    def quit_game(self):
+       
             
 
