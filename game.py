@@ -28,3 +28,4 @@ class Game:
 
         self.rabbit = Rabbit(self.canvas) 
         self.carrots = []  
+        self.score = 0 
