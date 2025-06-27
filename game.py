@@ -85,4 +85,5 @@ class Game:
         self.quit_button.destroy() 
         self.canvas.create_text(window_width // 2, window_height // 2 - 30, text = message, font = ("Arial", 24, "bold"), fill ="#d32f2f")  
         self.canvas.create_text(window_width // 2, window_height // 2, text = f"Final Score: {self.score}", font = ("Arial", 14), fill = "black")  
+        self.check_high_score() 
 
