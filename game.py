@@ -95,5 +95,8 @@ class Game:
                 with open(score_file, "r") as f: 
                     saved_name, saved_score = f.readline().split(":")  
                     saved_score = int(saved_score)  
-
+            else:
+                saved_name, saved_score = "None", 0                
+        except:
+            saved_name, saved_score = "None", 0
 
