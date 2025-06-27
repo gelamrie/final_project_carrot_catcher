@@ -57,5 +57,6 @@ class Game:
         for carrot in self.carrots[:]:                             
             carrot.fall() 
             if carrot.is_caught_by(self.rabbit):                    
-                self.score += 1       
+                self.score += 1   
+                self.canvas.itemconfig(self.score_text, text=f"Score: {self.score}")    
 
