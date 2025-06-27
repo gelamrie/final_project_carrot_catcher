@@ -5,3 +5,4 @@ class Rabbit:
     def __init__(self, canvas): 
         self.canvas = canvas
         self.x = window_width // 2  
+        self.y = window_height - player_height - 10
