@@ -47,4 +47,4 @@ class Game:
             return   
         x = random.randint(0, window_width - 40)                     
         carrot = Carrot(self.canvas, x, self.drop_speed)
-        
+        self.carrots.append(carrot)
