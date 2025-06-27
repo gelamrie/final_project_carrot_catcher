@@ -30,3 +30,5 @@ class GameMenu:
         if os.path.exists(score_file):
             try:
                 with open(score_file, "r") as f:
+                    name, score = f.readline().split(":")              
+                    return f"Highest Score: {score.strip()} by {name}" 
