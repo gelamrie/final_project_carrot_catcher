@@ -79,4 +79,7 @@ class Game:
     def restart_game(self):
         self.frame.destroy()
         GameMenu(self.root)
+    
+    def end_game(self, message):  
+
 
