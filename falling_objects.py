@@ -21,3 +21,5 @@ class FallingObject:
     
     def delete(self):
         self.canvas.delete(self.id) 
+    
+    def is_caught_by(self, player):
