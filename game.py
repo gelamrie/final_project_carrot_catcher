@@ -73,6 +73,7 @@ class Game:
         self.quit_button.destroy()
         self.canvas.create_text(window_width // 2, window_height // 2 - 20, text = f"Final Score: {self.score}", font = ("Arial", 18, "bold"), fill = "black")  
         self.canvas.create_text(window_width // 2, window_height // 2 + 10, text = "Thanks for playing!", font = ("Arial", 12), fill = "gray")  
-       
+        self.try_again_button = tk.Button(self.frame, text = "Try Again", font = ("Arial", 12), command = self.restart_game, bg ="#4CAF50", fg ="white")  
+        self.try_again_button.place(x = window_width // 2 - 40, y = window_height // 2 + 40)  
             
 
