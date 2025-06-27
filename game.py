@@ -12,3 +12,4 @@ class Game:
         self.root = root      
         self.difficulty = difficulty    
         self.player_name = player_name 
+        self.drop_speed = difficulty_settings[difficulty]["speed"]
