@@ -40,4 +40,5 @@ class Game:
         self.quit_button.place(x = window_width - 60, y = 10)
 
         self.spawn_carrot()
+        self.update()  
         
