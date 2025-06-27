@@ -25,3 +25,5 @@ class FallingObject:
     def is_caught_by(self, player):
         obj_coords = self.canvas.bbox(self.id) 
         player_coords = self.canvas.bbox(player.id) 
+        if not obj_coords or not player_coords: 
+            return False
