@@ -71,7 +71,8 @@ class Game:
         self.running = False
         self.canvas.delete("all")
         self.quit_button.destroy()
-        self.canvas.create_text(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2 - 20, text = f"Final Score: {self.score}", font = ("Arial", 18, "bold"), fill = "black")  
-        self.canvas.create_text(WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2 + 10, text = "Thanks for playing!", font = ("Arial", 12), fill = "gray")  
+        self.canvas.create_text(window_width // 2, window_height // 2 - 20, text = f"Final Score: {self.score}", font = ("Arial", 18, "bold"), fill = "black")  
+        self.canvas.create_text(window_width // 2, window_height // 2 + 10, text = "Thanks for playing!", font = ("Arial", 12), fill = "gray")  
+       
             
 
