@@ -18,3 +18,5 @@ class FallingObject:
 
     def is_offscreen(self):
         return self.y > window_height
+    
+    def delete(self):
