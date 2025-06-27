@@ -38,4 +38,6 @@ class Game:
 
         self.quit_button = tk.Button(self.frame, text = "Quit", font =("Arial", 10), command = self.quit_game, bg = "red", fg = "white")
         self.quit_button.place(x = window_width - 60, y = 10)
+
+        self.spawn_carrot()
         
