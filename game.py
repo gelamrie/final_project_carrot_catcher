@@ -81,5 +81,6 @@ class Game:
         GameMenu(self.root)
     
     def end_game(self, message):  
-
+        self.running = False                                        
+        self.quit_button.destroy() 
 
