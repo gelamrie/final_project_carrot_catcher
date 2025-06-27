@@ -13,3 +13,4 @@ class FallingObject:
         self.id = self.canvas.create_image(self.x, self.y, image=self.image, anchor='nw')
 
     def fall(self):
+        self.canvas.move(self.id, 0, self.speed) 
