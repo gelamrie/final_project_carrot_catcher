@@ -18,4 +18,6 @@ class GameMenu:
 
         tk.Label(self.frame, text="Enter Your Name:", font = ("Arial", 12)).pack(pady = 5) 
         self.name_entry = tk.Entry(self.frame, font = ("Arial", 12))                      
-        self.name_entry.pack(pady = 5)            
+        self.name_entry.pack(pady = 5)     
+
+        tk.Label(self.frame, text = "Choose Difficulty", font = ("Arial", 14, "bold")).pack(pady = 10)       
