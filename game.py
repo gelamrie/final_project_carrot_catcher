@@ -32,3 +32,5 @@ class Game:
         self.running = True 
 
         self.score_text = self.canvas.create_text(10, 10, anchor="nw", font=("Arial", 16, "bold"), fill="#33691e", text="Score: 0")
+
+        self.root.bind("<Left>", lambda e: self.rabbit.move(-20))
