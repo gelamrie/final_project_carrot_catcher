@@ -68,6 +68,8 @@ class Game:
         self.root.after(50, self.update)
 
     def quit_game(self):
-       
+        self.running = False
+        self.canvas.delete("all")
+        self.quit_button.destroy()
             
 
