@@ -25,3 +25,5 @@ class Game:
         bg_img.putalpha(150)  
         self.bg_photo = ImageTk.PhotoImage(bg_img) 
         self.canvas.create_image(0, 0, image=self.bg_photo, anchor='nw')
+
+        self.rabbit = Rabbit(self.canvas) 
