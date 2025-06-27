@@ -29,4 +29,5 @@ class FallingObject:
             return False
         return not (
             obj_coords[2] < player_coords[0] or
+            obj_coords[0] > player_coords[2] or
         )
