@@ -5,7 +5,6 @@ from config import window_width, window_height, score_file, difficulty_settings,
 from rabbit import Rabbit
 from carrot import Carrot
 from PIL import Image, ImageTk 
-from game_menu import GameMenu 
 
 class Game: 
     def __init__(self, root, difficulty, player_name):   
@@ -77,6 +76,7 @@ class Game:
         self.try_again_button.place(x = window_width // 2 - 40, y = window_height // 2 + 40)  
             
     def restart_game(self):
+        from game_menu import GameMenu 
         self.frame.destroy()
         GameMenu(self.root)
     
