@@ -17,3 +17,4 @@ class FallingObject:
         self.y = self.canvas.coords(self.id)[1] 
 
     def is_offscreen(self):
+        return self.y > window_height
