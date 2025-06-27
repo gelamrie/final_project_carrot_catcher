@@ -19,4 +19,4 @@ class Game:
         self.frame.pack()   
 
         self.canvas = tk.Canvas(self.frame, width = window_width, height = window_height)
-        
+        self.canvas.pack()
