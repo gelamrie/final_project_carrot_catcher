@@ -20,3 +20,5 @@ class Game:
 
         self.canvas = tk.Canvas(self.frame, width = window_width, height = window_height)
         self.canvas.pack()
+
+        bg_img = Image.open(background_image_path).resize((window_width, window_height)).convert("RGBA")
