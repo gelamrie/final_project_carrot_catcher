@@ -42,3 +42,4 @@ class Game:
         self.spawn_carrot()
         self.update()  
         
+    def spawn_carrot(self):    
