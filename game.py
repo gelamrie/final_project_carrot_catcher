@@ -100,3 +100,6 @@ class Game:
         except:
             saved_name, saved_score = "None", 0
 
+        if self.score > saved_score:                                 
+            with open(SCORE_FILE, "w") as f:                        
+                f.write(f"{self.player_name}:{self.score}")
