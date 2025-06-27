@@ -53,4 +53,6 @@ class Game:
 
     def update(self):
         if not self.running:
-            return             
+            return  
+        for carrot in self.carrots[:]:                             
+            carrot.fall()              
