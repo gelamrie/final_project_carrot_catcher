@@ -61,4 +61,7 @@ class Game:
                 self.canvas.itemconfig(self.score_text, text=f"Score: {self.score}")    
                 carrot.delete()                                     
                 self.carrots.remove(carrot) 
+            elif carrot.is_offscreen():                              
+                carrot.delete()                                      
+                self.carrots.remove(carrot)      
 
