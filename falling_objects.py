@@ -15,3 +15,5 @@ class FallingObject:
     def fall(self):
         self.canvas.move(self.id, 0, self.speed)
         self.y = self.canvas.coords(self.id)[1] 
+
+    def is_offscreen(self):
