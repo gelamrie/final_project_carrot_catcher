@@ -93,5 +93,7 @@ class Game:
         try:
             if os.path.exists(score_file):                          
                 with open(score_file, "r") as f: 
+                    saved_name, saved_score = f.readline().split(":")  
+                    saved_score = int(saved_score)  
 
 
