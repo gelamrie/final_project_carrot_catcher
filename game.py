@@ -64,4 +64,7 @@ class Game:
             elif carrot.is_offscreen():                              
                 carrot.delete()                                      
                 self.carrots.remove(carrot)      
+                self.end_game("Game Over")
+        self.root.after(50, self.update)
+            
 
