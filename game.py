@@ -24,16 +24,18 @@ class Game:
         bg_img = Image.open(background_image_path).resize((window_width, window_height)).convert("RGBA")
         bg_img.putalpha(150)  
         self.bg_photo = ImageTk.PhotoImage(bg_img) 
-        self.canvas.create_image(0, 0, image=self.bg_photo, anchor='nw')
+        self.canvas.create_image(0, 0, image = self.bg_photo, anchor = 'nw')
 
         self.rabbit = Rabbit(self.canvas) 
         self.carrots = []  
         self.score = 0 
         self.running = True 
 
-        self.score_text = self.canvas.create_text(10, 10, anchor="nw", font=("Arial", 16, "bold"), fill="#33691e", text="Score: 0")
+        self.score_text = self.canvas.create_text(10, 10, anchor = "nw", font = ("Arial", 16, "bold"), fill="#33691e", text = "Score: 0")
 
         self.root.bind("<Left>", lambda e: self.rabbit.move(-20))
         self.root.bind("<Right>", lambda e: self.rabbit.move(20))
 
-        self.quit_button = tk.Button(self.frame, text="Quit", font=("Arial", 10), command=self.quit_game, bg="red", fg="white")
+        self.quit_button = tk.Button(self.frame, text = "Quit", font =("Arial", 10), command = self.quit_game, bg = "red", fg = "white")
+        self.quit_button.place(x = window_width - 60, y = 10)
+        
