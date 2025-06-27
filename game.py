@@ -55,4 +55,7 @@ class Game:
         if not self.running:
             return  
         for carrot in self.carrots[:]:                             
-            carrot.fall()              
+            carrot.fall() 
+            if carrot.is_caught_by(self.rabbit):                    
+                self.score += 1       
+
