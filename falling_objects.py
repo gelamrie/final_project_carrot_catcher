@@ -30,4 +30,5 @@ class FallingObject:
         return not (
             obj_coords[2] < player_coords[0] or
             obj_coords[0] > player_coords[2] or
+            obj_coords[3] < player_coords[1] or 
         )
