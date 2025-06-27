@@ -48,3 +48,5 @@ class Game:
         x = random.randint(0, window_width - 40)                     
         carrot = Carrot(self.canvas, x, self.drop_speed)
         self.carrots.append(carrot)
+        delay = max(300, self.drop_interval + random.randint(-200, 200))  
+        self.root.after(delay, self.spawn_carrot)               
