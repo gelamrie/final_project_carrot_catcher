@@ -11,4 +11,7 @@ class GameMenu:
         self.frame = tk.Frame(root, width = window_width, height = window_height) 
         self.frame.pack()    
 
-        tk.Label(self.frame, text = "Rabbit Catching Carrots", font = ("Arial", 20, "bold")).pack(pady = 20)                              
+        tk.Label(self.frame, text = "Rabbit Catching Carrots", font = ("Arial", 20, "bold")).pack(pady = 20)           
+
+        highscore_label = tk.Label(self.frame, text=  self.get_high_score_text(), font = ("Arial", 12), fg = "gray")  
+        highscore_label.pack(pady = 5)                 
