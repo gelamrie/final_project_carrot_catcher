@@ -23,3 +23,5 @@ class FallingObject:
         self.canvas.delete(self.id) 
     
     def is_caught_by(self, player):
+        obj_coords = self.canvas.bbox(self.id) 
+        player_coords = self.canvas.bbox(player.id) 
