@@ -30,3 +30,5 @@ class Game:
         self.carrots = []  
         self.score = 0 
         self.running = True 
+
+        self.score_text = self.canvas.create_text(10, 10, anchor="nw", font=("Arial", 16, "bold"), fill="#33691e", text="Score: 0")
