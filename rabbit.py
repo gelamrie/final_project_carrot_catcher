@@ -7,3 +7,4 @@ class Rabbit:
         self.x = window_width // 2  
         self.y = window_height - player_height - 10
         img = Image.open(rabbit_image_path).convert("RGBA").resize((player_width, player_height))
+        self.image = ImageTk.PhotoImage(img) 
