@@ -15,4 +15,5 @@ class Game:
         self.drop_speed = difficulty_settings[difficulty]["speed"]
         self.drop_interval = difficulty_settings[difficulty]["interval"]
         
-        self.frame = tk.Frame(root, width = window_width, height = window_height) 
+        self.frame = tk.Frame(root, width = window_width, height = window_height)
+        self.frame.pack()   
