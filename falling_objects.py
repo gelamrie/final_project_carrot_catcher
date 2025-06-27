@@ -20,3 +20,4 @@ class FallingObject:
         return self.y > window_height
     
     def delete(self):
+        self.canvas.delete(self.id) 
