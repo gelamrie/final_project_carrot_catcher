@@ -14,4 +14,8 @@ class GameMenu:
         tk.Label(self.frame, text = "Rabbit Catching Carrots", font = ("Arial", 20, "bold")).pack(pady = 20)           
 
         highscore_label = tk.Label(self.frame, text=  self.get_high_score_text(), font = ("Arial", 12), fg = "gray")  
-        highscore_label.pack(pady = 5)                 
+        highscore_label.pack(pady = 5)     
+
+        tk.Label(self.frame, text="Enter Your Name:", font = ("Arial", 12)).pack(pady = 5) 
+        self.name_entry = tk.Entry(self.frame, font = ("Arial", 12))                      
+        self.name_entry.pack(pady = 5)            
