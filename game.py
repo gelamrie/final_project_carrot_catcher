@@ -11,3 +11,4 @@ class Game:
     def __init__(self, root, difficulty, player_name):   
         self.root = root      
         self.difficulty = difficulty    
+        self.player_name = player_name 
