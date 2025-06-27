@@ -35,3 +35,5 @@ class Game:
 
         self.root.bind("<Left>", lambda e: self.rabbit.move(-20))
         self.root.bind("<Right>", lambda e: self.rabbit.move(20))
+
+        self.quit_button = tk.Button(self.frame, text="Quit", font=("Arial", 10), command=self.quit_game, bg="red", fg="white")
