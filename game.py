@@ -23,3 +23,4 @@ class Game:
 
         bg_img = Image.open(background_image_path).resize((window_width, window_height)).convert("RGBA")
         bg_img.putalpha(150)  
+        self.bg_photo = ImageTk.PhotoImage(bg_img) 
