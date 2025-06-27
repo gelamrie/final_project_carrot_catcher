@@ -8,3 +8,6 @@ class FallingObject:
         self.x = x 
         self.y = 0 
         self.speed = speed 
+        img = Image.open(image_path).convert("RGBA").resize((object_size, object_size))
+        
+        
