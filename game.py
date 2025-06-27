@@ -6,3 +6,5 @@ from rabbit import Rabbit
 from carrot import Carrot
 from PIL import Image, ImageTk 
 from game_menu import GameMenu 
+
+class Game: 
