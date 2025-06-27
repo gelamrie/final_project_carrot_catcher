@@ -59,4 +59,6 @@ class Game:
             if carrot.is_caught_by(self.rabbit):                    
                 self.score += 1   
                 self.canvas.itemconfig(self.score_text, text=f"Score: {self.score}")    
+                carrot.delete()                                     
+                self.carrots.remove(carrot) 
 
