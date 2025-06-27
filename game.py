@@ -10,3 +10,4 @@ from game_menu import GameMenu
 class Game: 
     def __init__(self, root, difficulty, player_name):   
         self.root = root      
+        self.difficulty = difficulty    
