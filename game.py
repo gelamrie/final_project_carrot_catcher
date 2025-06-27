@@ -27,3 +27,4 @@ class Game:
         self.canvas.create_image(0, 0, image=self.bg_photo, anchor='nw')
 
         self.rabbit = Rabbit(self.canvas) 
+        self.carrots = []  
