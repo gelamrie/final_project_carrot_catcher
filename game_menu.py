@@ -39,3 +39,7 @@ class GameMenu:
     
     def start_game(self, difficulty):                                  
         name = self.name_entry.get().strip() 
+        if not name:
+            name = "Anonymous"                                         
+        self.frame.destroy()                                           
+        Game(self.root, difficulty, name)   
