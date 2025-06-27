@@ -11,3 +11,5 @@ class FallingObject:
         img = Image.open(image_path).convert("RGBA").resize((object_size, object_size))
         self.image = ImageTk.PhotoImage(img)
         self.id = self.canvas.create_image(self.x, self.y, image=self.image, anchor='nw')
+
+    def fall(self):
