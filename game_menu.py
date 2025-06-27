@@ -6,3 +6,5 @@ import os
 class GameMenu: 
     def __init__(self, root):                                       
         self.root = root
+        self.root.title("Carrot Catcher")            
+        self.root.geometry(f"{window_width}x{window_height}")
