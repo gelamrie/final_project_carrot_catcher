@@ -12,3 +12,4 @@ class Rabbit:
     
     def move(self, dx): 
         self.x += dx 
+        self.x = max(0, min(self.x, window_width - player_width))
