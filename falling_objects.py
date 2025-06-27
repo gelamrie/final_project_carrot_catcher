@@ -7,3 +7,4 @@ class FallingObject:
         self.canvas = canvas 
         self.x = x 
         self.y = 0 
+        self.speed = speed 
