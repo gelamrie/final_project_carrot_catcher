@@ -4,3 +4,5 @@ from game import Game
 import os
 
 class GameMenu: 
+    def __init__(self, root):                                       
+        self.root = root
